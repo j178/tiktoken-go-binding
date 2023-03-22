@@ -1,7 +1,7 @@
 package tiktoken_go
 
 /*
-#cgo LDFLAGS: ./tiktoken-cffi/libtitoken.a -ldl -lm -framework Security -framework Foundation
+#cgo LDFLAGS: ./tiktoken-cffi/libtitoken.a -ldl -framework Security -framework Foundation
 #include <stdlib.h>
 
 extern unsigned int count_tokens(const char*, const char*);
