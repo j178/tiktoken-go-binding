@@ -1,9 +1,9 @@
-//go:build darwin
+//go:build !darwin && !windows
 
 package tiktoken_go
 
 /*
-#cgo LDFLAGS: ./tiktoken-cffi/libtiktoken.a -ldl -framework Security -framework CoreFoundation
+#cgo LDFLAGS: ./tiktoken-cffi/libtiktoken.a -ldl
 #include <stdlib.h>
 
 extern unsigned int count_tokens(const char*, const char*);
