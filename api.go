@@ -1,9 +1,11 @@
-//go:build windows
-
 package tiktoken_go
 
 /*
-#cgo LDFLAGS: -L./tiktoken-cffi/ -ltiktoken -lws2_32
+#cgo LDFLAGS: ./tiktoken-cffi/libtiktoken.a
+#cgo darwin LDFLAGS: -framework Security -framework CoreFoundation
+#cgo windows LDFLAGS: -lws2_32
+#cgo linux LDFLAGS: -ldl
+
 #include <stdlib.h>
 
 extern unsigned int count_tokens(const char*, const char*);
