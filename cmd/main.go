@@ -11,5 +11,5 @@ import (
 func main() {
 	in, _ := io.ReadAll(os.Stdin)
 	count := tiktoken_go.CountTokens("gpt-3.5-turbo", string(in))
-	fmt.Print(count)
+	fmt.Println(count)
 }
