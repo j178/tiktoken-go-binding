@@ -43,3 +43,4 @@ pub extern "C" fn get_context_size(model: *const libc::c_char) -> libc::c_uint {
     let size = tiktoken_rs::model::get_context_size(model);
     size as libc::c_uint
 }
+
