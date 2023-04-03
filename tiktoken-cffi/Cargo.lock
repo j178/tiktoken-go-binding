@@ -204,7 +204,7 @@ dependencies = [
 [[package]]
 name = "tiktoken-rs"
 version = "0.3.3"
-source = "git+https://github.com/j178/tiktoken-rs?rev=482601c173c3c2e6a75f6c14550ff168e651fb9b#482601c173c3c2e6a75f6c14550ff168e651fb9b"
+source = "git+https://github.com/j178/tiktoken-rs.git?branch=main#482601c173c3c2e6a75f6c14550ff168e651fb9b"
 dependencies = [
  "anyhow",
  "base64",

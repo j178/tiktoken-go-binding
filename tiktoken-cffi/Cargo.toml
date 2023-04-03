@@ -14,5 +14,5 @@ anyhow = "1.0.70"
 
 # My fork that removes dependency on async-openai
 [dependencies.tiktoken-rs]
-git = "https://github.com/j178/tiktoken-rs"
-rev = "482601c173c3c2e6a75f6c14550ff168e651fb9b"
+git = "https://github.com/j178/tiktoken-rs.git"
+branch = "main"
