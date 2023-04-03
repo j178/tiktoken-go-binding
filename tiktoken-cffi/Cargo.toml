@@ -9,6 +9,10 @@ crate-type = ["staticlib"]
 
 [dependencies]
 libc = "0.2.140"
-tiktoken-rs = "0.3.3"
 parking_lot = "0.12.1"
 anyhow = "1.0.70"
+
+# My fork that removes dependency on async-openai
+[dependencies.tiktoken-rs]
+git = "https://github.com/j178/tiktoken-rs"
+rev = "482601c173c3c2e6a75f6c14550ff168e651fb9b"
