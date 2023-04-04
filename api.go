@@ -1,12 +1,12 @@
+//go:build !windows
+
 package tiktoken_go
 
 //go:generate cargo -C tiktoken-cffi build --release
 
 /*
-#cgo LDFLAGS: ${SRCDIR}/tiktoken-cffi/target/release/libtiktoken.a
-#cgo darwin LDFLAGS: -framework Security -framework CoreFoundation
-#cgo windows LDFLAGS: -lws2_32
-#cgo linux LDFLAGS: -ldl
+#cgo linux LDFLAGS: ${SRCDIR}/tiktoken-cffi/target/release/libtiktoken.a -ldl
+#cgo darwin LDFLAGS: ${SRCDIR}/tiktoken-cffi/target/release/libtiktoken.a -framework Security -framework CoreFoundation
 
 #include <stdlib.h>
 
